@@ -34,7 +34,7 @@ namespace Leccion1HLBV.model
             return "Nombre del archivo: "+nombre+" Extensión: "+extension+ " Capacidad: "+capacidad;
         }
 
-        public virtual double CalcularMegas(int capacidad)
+        public virtual double CalcularMegas()
         {
             return (double)capacidad/1000;
         }

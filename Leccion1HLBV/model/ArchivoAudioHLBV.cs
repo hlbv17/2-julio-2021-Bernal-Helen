@@ -31,9 +31,9 @@ namespace Leccion1HLBV.model
             return 0.0;
         }
 
-        public override double CalcularMegas(int capacidad)
+        /*public override double CalcularMegas(int capacidad)
         {
             return base.CalcularMegas(capacidad);   
-        }
+        }*/
     }
 }

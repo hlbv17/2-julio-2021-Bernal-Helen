@@ -51,7 +51,7 @@ namespace Leccion1HLBV
                 lblMayor.Text = "";
                 lblMenor.Text = "";
                 admAA.Guardar(nombre, extension, capacidad, tiempo);
-                admAA.CalcularMb(capacidad, lblMegas);
+                admAA.CalcularMb(lblMegas);
                 admAA.LlenarGrid(dgvArchivo, lblTotal);
                 admAA.TotalExtension(lblTotalMp3, lblTotalAu, lblTotalWav);
                 admAA.Mayor(lblMayor);

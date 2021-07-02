@@ -69,15 +69,15 @@ namespace Leccion1HLBV.control
             lblTotalWav.Text = c + "";
         }
 
-        internal void CalcularMb(string capacidad, Label lblMegas)
+        internal void CalcularMb(Label lblMegas)
         {
             double n = 0.0;
-            int iCapacidad = v.AEntero(capacidad);
+            //int iCapacidad = v.AEntero(capacidad);
             ArchivoAudioHLBV aa = null;
             foreach (ArchivoHLBV a in lista)
             {
                 aa = (ArchivoAudioHLBV)a;  //downcasting
-                n = aa.CalcularMegas(iCapacidad);
+                n = aa.CalcularMegas();
             }
             lblMegas.Text = n + "";
         }
@@ -87,7 +87,7 @@ namespace Leccion1HLBV.control
             int iCapacidad = v.AEntero(capacidad), iTiempo = v.AEntero(tiempo);
             ArchivoAudioHLBV aa = null;
             aa = new ArchivoAudioHLBV(iTiempo, nombre, extension, iCapacidad);
-            aa.CalcularMegas(iCapacidad);
+            aa.CalcularMegas();
             lista.Add(aa);
         }
 
