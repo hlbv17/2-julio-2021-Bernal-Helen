@@ -36,7 +36,7 @@ namespace Leccion1HLBV.model
 
         public virtual double CalcularMegas(int capacidad)
         {
-            return capacidad/1000;
+            return (double)capacidad/1000;
         }
     }
 }
